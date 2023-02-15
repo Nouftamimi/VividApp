@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E53CD0A299CFDA4005F60BA /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E53CD09299CFDA4005F60BA /* SplashScreenView.swift */; };
 		599EF0622432E7330061D245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599EF0612432E7330061D245 /* AppDelegate.swift */; };
 		599EF0642432E7330061D245 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599EF0632432E7330061D245 /* SceneDelegate.swift */; };
 		599EF0662432E7330061D245 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599EF0652432E7330061D245 /* ContentView.swift */; };
@@ -21,7 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		599EF05E2432E7330061D245 /* VividApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VividApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E53CD09299CFDA4005F60BA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		599EF05E2432E7330061D245 /* Vivid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vivid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		599EF0612432E7330061D245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		599EF0632432E7330061D245 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		599EF0652432E7330061D245 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,10 +49,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E53CD08299CFD8B005F60BA /* OnBoarding-SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1E53CD09299CFDA4005F60BA /* SplashScreenView.swift */,
+			);
+			path = "OnBoarding-SplashScreen";
+			sourceTree = "<group>";
+		};
 		599EF0552432E7330061D245 = {
 			isa = PBXGroup;
 			children = (
-				599EF0602432E7330061D245 /* VividApp */,
+				599EF0602432E7330061D245 /* Vivid */,
 				599EF05F2432E7330061D245 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +68,12 @@
 		599EF05F2432E7330061D245 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				599EF05E2432E7330061D245 /* VividApp.app */,
+				599EF05E2432E7330061D245 /* Vivid.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		599EF0602432E7330061D245 /* VividApp */ = {
+		599EF0602432E7330061D245 /* Vivid */ = {
 			isa = PBXGroup;
 			children = (
 				599EF07F2433078C0061D245 /* App */,
@@ -74,7 +84,7 @@
 				599EF06F2432E7330061D245 /* Info.plist */,
 				599EF0692432E7330061D245 /* Preview Content */,
 			);
-			path = VividApp;
+			path = Vivid;
 			sourceTree = "<group>";
 		};
 		599EF0692432E7330061D245 /* Preview Content */ = {
@@ -106,9 +116,10 @@
 		599EF080243307A00061D245 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1E53CD08299CFD8B005F60BA /* OnBoarding-SplashScreen */,
 				599EF0652432E7330061D245 /* ContentView.swift */,
-				599EF0772432EA1E0061D245 /* ARDrawView */,
 				599EF0812433081C0061D245 /* ColorSelectView.swift */,
+				599EF0772432EA1E0061D245 /* ARDrawView */,
 				599EF08324330BC70061D245 /* VisualEffectView.swift */,
 			);
 			path = View;
@@ -125,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		599EF05D2432E7330061D245 /* VividApp */ = {
+		599EF05D2432E7330061D245 /* Vivid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 599EF0722432E7330061D245 /* Build configuration list for PBXNativeTarget "VividApp" */;
+			buildConfigurationList = 599EF0722432E7330061D245 /* Build configuration list for PBXNativeTarget "Vivid" */;
 			buildPhases = (
 				599EF05A2432E7330061D245 /* Sources */,
 				599EF05B2432E7330061D245 /* Frameworks */,
@@ -137,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = VividApp;
+			name = Vivid;
 			productName = DrawingNet;
-			productReference = 599EF05E2432E7330061D245 /* VividApp.app */;
+			productReference = 599EF05E2432E7330061D245 /* Vivid.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -157,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 599EF0592432E7330061D245 /* Build configuration list for PBXProject "VividApp" */;
+			buildConfigurationList = 599EF0592432E7330061D245 /* Build configuration list for PBXProject "Vivid" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -170,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				599EF05D2432E7330061D245 /* VividApp */,
+				599EF05D2432E7330061D245 /* Vivid */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +206,7 @@
 			files = (
 				599EF0622432E7330061D245 /* AppDelegate.swift in Sources */,
 				599EF087243314F40061D245 /* Color+Extension.swift in Sources */,
+				1E53CD0A299CFDA4005F60BA /* SplashScreenView.swift in Sources */,
 				599EF0642432E7330061D245 /* SceneDelegate.swift in Sources */,
 				599EF08424330BC70061D245 /* VisualEffectView.swift in Sources */,
 				599EF0822433081C0061D245 /* ColorSelectView.swift in Sources */,
@@ -268,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -322,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -337,11 +349,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"VividApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Vivid/Preview Content\"";
 				DEVELOPMENT_TEAM = AK4J6WF9ZA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = VividApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_FILE = Vivid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,11 +370,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"VividApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Vivid/Preview Content\"";
 				DEVELOPMENT_TEAM = AK4J6WF9ZA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = VividApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_FILE = Vivid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		599EF0592432E7330061D245 /* Build configuration list for PBXProject "VividApp" */ = {
+		599EF0592432E7330061D245 /* Build configuration list for PBXProject "Vivid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				599EF0702432E7330061D245 /* Debug */,
@@ -386,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		599EF0722432E7330061D245 /* Build configuration list for PBXNativeTarget "VividApp" */ = {
+		599EF0722432E7330061D245 /* Build configuration list for PBXNativeTarget "Vivid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				599EF0732432E7330061D245 /* Debug */,
