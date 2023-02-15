@@ -13,6 +13,7 @@ struct ContentView: View {
                 VStack {
                    HStack {
                         VStack{
+
                             Circle()
                                 .frame(width: 62, height: 62)
                                 .cornerRadius(25)
