@@ -10,7 +10,7 @@ import Foundation
 import CloudKit
 import SwiftUI
 
-struct userModel  {
+struct userModel {
     
     
    

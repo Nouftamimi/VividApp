@@ -35,10 +35,14 @@ struct ContentView: View {
                             .foregroundColor(Color("Nouf"))
                             .opacity(0.4)
                             .overlay(
+                                
                                 VStack {
-                                    Image(systemName: "arrow.uturn.backward")
-                                        .font(.system(size: 37))
-                                        .foregroundColor(.white)
+                                    Button("Draw", action: {
+                                        arView.arDrawView.clearAll()
+                                    })
+//                                    Image(systemName: "arrow.uturn.backward")
+//                                        .font(.system(size: 37))
+//                                        .foregroundColor(.white)
                                     Spacer().frame(height: 30)
                                     ColorSelectView(hexColor: $hexColor)
                                     

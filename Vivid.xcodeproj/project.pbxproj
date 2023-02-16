@@ -385,7 +385,7 @@
 				CODE_SIGN_ENTITLEMENTS = Vivid/Vivid.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Vivid/Preview Content\"";
-				DEVELOPMENT_TEAM = XC5CMCPFT9;
+				DEVELOPMENT_TEAM = D9Q43T442X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Vivid/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -393,7 +393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Vividteam.na;
+				PRODUCT_BUNDLE_IDENTIFIER = Vividteam.naroaa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -410,7 +410,7 @@
 				CODE_SIGN_ENTITLEMENTS = Vivid/Vivid.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Vivid/Preview Content\"";
-				DEVELOPMENT_TEAM = XC5CMCPFT9;
+				DEVELOPMENT_TEAM = D9Q43T442X;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Vivid/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -418,7 +418,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Vividteam.na;
+				PRODUCT_BUNDLE_IDENTIFIER = Vividteam.naroaa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

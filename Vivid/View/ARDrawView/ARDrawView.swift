@@ -8,13 +8,14 @@ class ARDrawView: ARSCNView {
 	
 	//var multipeerSession: MultipeerSession?
 	var hexColor: String = ""
-	
+    var drawingArray = [Data]()
+    
+    
 	override init(frame: CGRect, options: [String : Any]? = nil) {
 		super.init(frame: frame, options: options)
 		let config = ARWorldTrackingConfiguration()
 		session.run(config)
 		delegate = self
-		
 		
 	}
 	
@@ -39,9 +40,28 @@ class ARDrawView: ARSCNView {
 		let anchor = ARAnchor(name: hexColor, transform: node.simdWorldTransform)
 		session.add(anchor: anchor)
 		//sendToMultipeers(anchor)
+        
+        if let data = try? NSKeyedArchiver.archivedData(withRootObject: anchor, requiringSecureCoding: true) as Data {
+            drawingArray.append(data)
+        }
+        
+        
 	}
 	
-
+    func clearAll(){
+        let anc = session.currentFrame?.anchors ?? []
+        for anchor in anc {
+            session.remove(anchor: anchor)
+        }
+    }
+    
+    func drawFromArray(){
+        for item in drawingArray {
+            if let anchor = try? NSKeyedUnarchiver.unarchivedObject(ofClass: ARAnchor.self, from: item){
+                session.add(anchor: anchor)
+            }
+        }
+    }
 	
 	private func createLine(name: String) -> SCNNode {
 		let sphere = SCNSphere(radius: 0.005)

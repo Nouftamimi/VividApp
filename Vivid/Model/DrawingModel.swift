@@ -8,22 +8,37 @@
 
 import Foundation
 import CloudKit
-//
-//struct userModel : Identifiable {
-//    var id: ObjectIdentifier
-//    
-//   
-//    
-//    
-//    
-//    let ID : CKRecord.ID
-//    init (record:  CKRecord){
-//        self.ID = record.recordID
-//        
-//        
-//        
-//    }
-//    
-//    
-//}
-//
+
+struct drawingModel{
+   
+    
+   
+    
+    
+    
+    let id: CKRecord.ID
+    let userID : userModel
+//    let path : pathgModel
+    let TimeCreated : Date
+    let DateCreated : Date
+    let Location : CLLocation
+    
+    
+    
+    
+    
+    init (record:  CKRecord){
+       self.id = record.recordID
+        self.userID = record["userID"] as! userModel
+        self.DateCreated = record["DateCreated"] as! Date
+        self.TimeCreated = record["TimeCreated"] as! Date
+//    self.path = record["Path"] as! pathgModel
+        self.Location = record["Location"] as! CLLocation
+        
+        
+        
+    }
+    
+    
+}
+
