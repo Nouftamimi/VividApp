@@ -5,7 +5,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var hexColor: String = "#FFFFFF"
-    
+    @StateObject private var vm = userViewModel()
     var body: some View {
         let arView = ARDrawViewContainer(hexColor: $hexColor)
         return ZStack {
@@ -53,7 +53,8 @@ struct ContentView: View {
             
                    
                     
-        }.ignoresSafeArea()
+        }.onAppear{vm.addUser()}
+        .ignoresSafeArea()
        
             }
  
