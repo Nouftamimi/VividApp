@@ -1,5 +1,4 @@
 
-
 import SwiftUI
 
 struct ColorSelectView: View {
@@ -35,6 +34,6 @@ struct ColorSelectView: View {
 
 struct ColorSelectView_Previews: PreviewProvider {
     static var previews: some View {
-		ColorSelectView(hexColor: .constant("#ffffff"))
+        ColorSelectView(hexColor: .constant("#ffffff"))
     }
 }
