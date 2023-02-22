@@ -10,7 +10,7 @@ import Foundation
 import CloudKit
 import SwiftUI
 
-class PathViewModel : ObservableObject {
+class DrawingViewModel : ObservableObject {
 
 
     @StateObject private var vmCloud = CloudKitUserBootViewModel()
@@ -30,7 +30,7 @@ class PathViewModel : ObservableObject {
 
 
         let predicate = NSPredicate(value: true)
-        let query = CKQuery(recordType: "Path", predicate: predicate)
+        let query = CKQuery(recordType: "Drawing", predicate: predicate)
 
         vmCloud.container.publicCloudDatabase.perform(query, inZoneWith: nil) { (records, error) in
             if let error = error {
@@ -68,7 +68,7 @@ class PathViewModel : ObservableObject {
            return
         }
 
-        let pathRecord = CKRecord(recordType: "Path")
+        let pathRecord = CKRecord(recordType: "Drawing")
         pathRecord["compressedDrawingBytes"] = dataToUpload
 
 

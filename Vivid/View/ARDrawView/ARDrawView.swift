@@ -9,7 +9,7 @@ class ARDrawView: ARSCNView {
     //var multipeerSession: MultipeerSession?
     var hexColor: String = ""
     var drawingArray = [Data]()
-    @StateObject private var vmPath = PathViewModel()
+    @StateObject private var vmPath = DrawingViewModel()
     
     override init(frame: CGRect, options: [String : Any]? = nil) {
         super.init(frame: frame, options: options)

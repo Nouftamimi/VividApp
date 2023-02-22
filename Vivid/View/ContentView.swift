@@ -6,7 +6,7 @@ struct ContentView: View {
     
     @State var hexColor: String = "#FFFFFF"
     @StateObject private var vm = userViewModel()
-    @StateObject private var vmPath = PathViewModel()
+    @StateObject private var vmPath = DrawingViewModel()
 
     
     var body: some View {
@@ -53,25 +53,12 @@ struct ContentView: View {
                                                                                .font(.system(size: 37))
                                                                                .foregroundColor(.white)
                                     }
-//                                    Button("Draw", action: {
-//                                        arView.arDrawView.clearAll()
-//
-//                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                                            // your code here
-//                                            arView.arDrawView.drawFromArray()
-//                                        }
-//
-//
-//                                    })
-//                                    Image(systemName: "arrow.uturn.backward")
-//                                        .font(.system(size: 37))
-//                                        .foregroundColor(.white)
+
                                     Spacer().frame(height: 30)
                                     ColorSelectView(hexColor: $hexColor)
                                    
                                     
                                     Button {
-//                                        vmPath.saveToCloudKit()
                                         vmPath.savePath(arView.arDrawView.drawingArray) {
                                             //
                                             arView.arDrawView.clearAll()
@@ -79,19 +66,19 @@ struct ContentView: View {
                                     } label: {
                                         Image(systemName: "paperplane.fill")
                                             .font(.system(size: 32))
-                                        //Text("Tap me!")
+                                       
                                             .padding()
                                             .foregroundColor(.white)
-                                            //.background(.red)
+                                           
                                     }
-//                                    Button {
-// fetch data
-//                                    } label: {
-//                                        Image(systemName: "eye.fill")
-//                                            .font(.system(size: 32))
-//                                            .padding()
-//                                            .foregroundColor(.white)
-//                                    }
+                                    Button {
+                                        fetchAllDrawing()
+                                    } label: {
+                                        Image(systemName: "eye.fill")
+                                            .font(.system(size: 32))
+                                            .padding()
+                                            .foregroundColor(.white)
+                                    }
                                 })
                             .padding()
                     }.padding(.top,50)
@@ -109,15 +96,13 @@ struct ContentView: View {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
                 // your code here
-                fetchAllDrawing()
+//               fetchAllDrawing()
             }
         }
         .ignoresSafeArea()
        
             }
-//        .onReceive(arView.arDrawView){
-//            arView.arDrawView.drawFromArray()
-//        }
+
  
     }
 

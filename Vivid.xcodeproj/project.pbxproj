@@ -183,7 +183,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Geonseok Lee";
+				ORGANIZATIONNAME = "Vivid App";
 				TargetAttributes = {
 					599EF05D2432E7330061D245 = {
 						CreatedOnToolsVersion = 11.3;

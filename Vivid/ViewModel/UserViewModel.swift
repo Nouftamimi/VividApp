@@ -109,7 +109,7 @@ class userViewModel : ObservableObject {
     func addUser () {
         
         let newUser = CKRecord(recordType: "Users")
-        newUser["name"] = vmCloud.userName
+       
         vmCloud.container.publicCloudDatabase.save(newUser){ record, error in
             guard  error  == nil else{
                 print(error?.localizedDescription)
