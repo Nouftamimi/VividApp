@@ -2,24 +2,27 @@
 //  UserModel.swift
 //  Vivid
 //
-//  Created by Jumanah  on 24/07/1444 AH.
-//  Copyright © 1444 AH Geonseok Lee. All rights reserved.
+//  Created by Roa  on 24/07/1444 AH.
+//  
 //
 
 import Foundation
 import CloudKit
 import SwiftUI
 
-struct userModel  {
+struct userModel {
     
     
    
-    let ID : CKRecord.ID
+    let Id : CKRecord.ID
     let name : String
+   
+    
+    var drawing :[String] = []
     init (record:  CKRecord){
-        self.ID = record.recordID
+        self.Id = record.recordID
         self.name = record["name"] as? String ?? ""
-        
+        self.drawing = record["drawing"] as? [String] ?? ["", "", ""]
         
     }
     
