@@ -7,8 +7,8 @@ struct ContentView: View {
     @State var hexColor: String = "#FFFFFF"
     @StateObject private var vm = userViewModel()
     @StateObject private var vmPath = DrawingViewModel()
-
-    
+    @State var ispressed : Bool = false
+//    @ObservableObject var mapV = mapView()
     var body: some View {
         let arView = ARDrawViewContainer(hexColor: $hexColor)
        
@@ -23,38 +23,64 @@ struct ContentView: View {
                 VStack {
                    HStack {
                         VStack{
-                            Circle()
-                                .frame(width: 62, height: 62)
-                                .cornerRadius(25)
-                                .foregroundColor(Color("Nouf"))
-                                .opacity(0.4)
+                            
+                         //   mapView().environmentObject(LocalSearchService())
 
-                                .overlay(Image(systemName: "globe.asia.australia")
-                                    .font(.system(size: 37))
-                                    .foregroundColor(.white))
-                        }.padding()
-                            Spacer()
+                            Button {
+                                ispressed = true
+//                                mapView().environmentObject(LocalSearchService())
+
+                            } label: {
+                                Circle()
+                                    .frame(width: 62, height: 62)
+                                    .cornerRadius(25)
+                                    .foregroundColor(Color("Nouf"))
+                                    .opacity(0.4)
+                                
+                               
+                                    .overlay(Image(systemName: "globe.asia.australia")
+                                             
+                                        .font(.system(size: 37))
+                                        .foregroundColor(.white))
+                                
+                            }
+                            //.fullScreenCover(isPresented: $ispressed, content: mapView.init)
+                            
+//                            Circle()
+//                                .frame(width: 62, height: 62)
+//                                .cornerRadius(25)
+//                                .foregroundColor(Color("Nouf"))
+//                                .opacity(0.4)
+//
+//                                .overlay(Image(systemName: "globe.asia.australia")
+//                                    .font(.system(size: 37))
+//                                    .foregroundColor(.white))
+                        }.padding() .frame(width: 90)
+                       Spacer()
                    
                         
                     VStack{
                         
                         Rectangle()
-                            .frame(width: 55, height: 240)
+                            .frame(width: 50, height: 220)
                             .cornerRadius(25)
                             .foregroundColor(Color("Nouf"))
                             .opacity(0.4)
                             .overlay(
-                                
+                               
                                 VStack {
+                                    
                                     Button {
                                         arView.arDrawView.clearAll()
                                     } label: {
                                         Image(systemName: "arrow.uturn.backward")
                                                                                .font(.system(size: 37))
                                                                                .foregroundColor(.white)
+                                                                              
+                                        
                                     }
 
-                                    Spacer().frame(height: 30)
+                                   // Spacer()
                                     ColorSelectView(hexColor: $hexColor)
                                    
                                     
@@ -66,8 +92,7 @@ struct ContentView: View {
                                     } label: {
                                         Image(systemName: "paperplane.fill")
                                             .font(.system(size: 32))
-                                       
-                                            .padding()
+                                    
                                             .foregroundColor(.white)
                                            
                                     }
@@ -75,8 +100,8 @@ struct ContentView: View {
                                         fetchAllDrawing()
                                     } label: {
                                         Image(systemName: "eye.fill")
-                                            .font(.system(size: 32))
-                                            .padding()
+                                            .font(.system(size: 28))
+                                            
                                             .foregroundColor(.white)
                                     }
                                 })
@@ -87,8 +112,6 @@ struct ContentView: View {
                     Spacer()
         
                     }
-            
-                   
                     
         }
         .onAppear{
@@ -109,6 +132,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        
         ContentView()
+        //mapView().environmentObject(LocalSearchService())
     }
 }
