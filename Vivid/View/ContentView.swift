@@ -44,7 +44,7 @@ struct ContentView: View {
                                         .foregroundColor(.white))
                                 
                             }
-                            .fullScreenCover(isPresented: $ispressed, content: mapView.init)
+                            //.fullScreenCover(isPresented: $ispressed, content: mapView.init)
                             
 //                            Circle()
 //                                .frame(width: 62, height: 62)
@@ -134,6 +134,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
         ContentView()
-        mapView().environmentObject(LocalSearchService())
+        //mapView().environmentObject(LocalSearchService())
     }
 }
