@@ -3,7 +3,7 @@
 //  Vivid
 //
 //  Created by Jumanah  on 24/07/1444 AH.
-//  Copyright © 1444 AH Geonseok Lee. All rights reserved.
+//  
 //
 
 import Foundation
@@ -109,7 +109,7 @@ class userViewModel : ObservableObject {
     func addUser () {
         
         let newUser = CKRecord(recordType: "Users")
-        newUser["name"] = vmCloud.userName
+       
         vmCloud.container.publicCloudDatabase.save(newUser){ record, error in
             guard  error  == nil else{
                 print(error?.localizedDescription)

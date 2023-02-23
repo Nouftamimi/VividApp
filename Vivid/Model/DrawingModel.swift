@@ -2,28 +2,39 @@
 //  DrawingModel.swift
 //  Vivid
 //
-//  Created by Jumanah  on 24/07/1444 AH.
-//  Copyright © 1444 AH Geonseok Lee. All rights reserved.
+//  Created by Roa  on 24/07/1444 AH.
+//  
 //
 
 import Foundation
 import CloudKit
-//
-//struct userModel : Identifiable {
-//    var id: ObjectIdentifier
-//    
-//   
-//    
-//    
-//    
-//    let ID : CKRecord.ID
-//    init (record:  CKRecord){
-//        self.ID = record.recordID
-//        
-//        
-//        
-//    }
-//    
-//    
-//}
-//
+
+struct drawingModel{
+   
+    
+   
+    
+    
+    
+    let id: CKRecord.ID
+    let  userId : String
+    let dateCreated : Date
+    let location : CLLocation
+    let compressedDrawingBytes = [Date]()
+    
+   
+    init (record:  CKRecord){
+        self.id = record.recordID
+        self.userId = record[" userId"] as? String ?? ""
+       
+       
+        self.dateCreated = record["dateCreated"] as! Date
+        self.location = record["location"] as! CLLocation
+       
+        
+        
+    }
+    
+    
+}
+

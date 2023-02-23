@@ -6,12 +6,8 @@ struct ColorSelectView: View {
     
 
         @State private var isWhite = true
-        
         @Binding var hexColor: String
-
-
-        
-        
+    
         var body: some View {
             //ScrollView(.horizontal) {
                 HStack{
@@ -35,6 +31,6 @@ struct ColorSelectView: View {
 
 struct ColorSelectView_Previews: PreviewProvider {
     static var previews: some View {
-		ColorSelectView(hexColor: .constant("#ffffff"))
+        ColorSelectView(hexColor: .constant("#ffffff"))
     }
 }
