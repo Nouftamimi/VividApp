@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>AR needs to use the camera</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Vivid need your location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
