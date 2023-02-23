@@ -43,7 +43,7 @@ struct ContentView: View {
                                         .font(.system(size: 37))
                                         .foregroundColor(.white))
                                 
-                            }
+                            } .padding(.top, -80)
                             //.fullScreenCover(isPresented: $ispressed, content: mapView.init)
                             
 //                            Circle()
@@ -92,7 +92,6 @@ struct ContentView: View {
                                     } label: {
                                         Image(systemName: "paperplane.fill")
                                             .font(.system(size: 32))
-                                    
                                             .foregroundColor(.white)
                                            
                                     }
@@ -101,8 +100,8 @@ struct ContentView: View {
                                     } label: {
                                         Image(systemName: "eye.fill")
                                             .font(.system(size: 28))
-                                            
                                             .foregroundColor(.white)
+                                            .padding(.top, 10)
                                     }
                                 })
                             .padding()
