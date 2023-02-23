@@ -1,9 +1,9 @@
 //
 //  SplashScreenView.swift
-//  VividApp
+//  Vivid
 //
-//  Created by Nouf  on 24/07/1444 AH.
-//  Copyright © 1444 AH Geonseok Lee. All rights reserved.
+//  Created by Jumanah  on 02/08/1444 AH.
+//  Copyright © 1444 AH Vivid App. All rights reserved.
 //
 
 import SwiftUI
@@ -12,18 +12,14 @@ struct SplashScreenView: View {
     @State private var isActive = false
     @State private var size = 0.8
     @State private var opacity = 0.5
-    
+
     var body: some View {
         if isActive {
-            ContentView()
+            OnboardingView()
         } else {
             ZStack {
-                if #available(iOS 14.0, *) {
-                    Color("Nouf")
-                        .ignoresSafeArea()
-                } else {
-                    // Fallback on earlier versions
-                }
+                Color("Nouf")
+                    .ignoresSafeArea()
                 VStack {
                     Image("Splash")
                 }
@@ -52,4 +48,3 @@ struct SplashScreenView_Previews: PreviewProvider {
         SplashScreenView()
     }
 }
-
