@@ -43,8 +43,8 @@ struct ContentView: View {
                                         .font(.system(size: 37))
                                         .foregroundColor(.white))
                                 
-                            }
-                            .fullScreenCover(isPresented: $ispressed, content: mapView.init)
+                            } .padding(.top,-80)
+//                            .fullScreenCover(isPresented: $ispressed, content: mapView.init)
                             
 //                            Circle()
 //                                .frame(width: 62, height: 62)
@@ -101,7 +101,7 @@ struct ContentView: View {
                                     } label: {
                                         Image(systemName: "eye.fill")
                                             .font(.system(size: 28))
-                                            
+                                            .padding(.top,10)
                                             .foregroundColor(.white)
                                     }
                                 })
@@ -134,6 +134,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
         ContentView()
-        mapView().environmentObject(LocalSearchService())
+//        mapView().environmentObject(LocalSearchService())
     }
 }

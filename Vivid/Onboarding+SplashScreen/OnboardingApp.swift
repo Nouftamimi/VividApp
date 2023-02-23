@@ -1,23 +1,22 @@
+////
+////  OnboardingApp.swift
+////  Vivid
+////
+////  Created by Jumanah  on 03/08/1444 AH.
+////  Copyright © 1444 AH Vivid App. All rights reserved.
+////
 //
-//  OnboardingApp.swift
-//  Vivid
+//import SwiftUI
 //
-//  Created by Jumanah  on 03/08/1444 AH.
-//  Copyright © 1444 AH Vivid App. All rights reserved.
+//@main
+//struct OnboardingApp: App {
+////    @AppStorage ("isOnboarding") var isOnboarding = true
 //
-
-import SwiftUI
-
-@main
-struct OnboardingApp: App {
-    @AppStorage ("isOnboarding") var isOnboarding = true
-    var body: some Scene {
-        WindowGroup {
-            if isOnboarding {
-                OnboardingView()
-            } else {
-                ContentView()
-            }
-        }
-    }
-}
+//
+//    var body: some Scene {
+//        WindowGroup {
+//            MotherView().environmentObject(ViewRouter())
+//        }
+//
+//    }
+//}

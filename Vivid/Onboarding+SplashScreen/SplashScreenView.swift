@@ -15,13 +15,15 @@ struct SplashScreenView: View {
 
     var body: some View {
         if isActive {
-            OnboardingView()
+            ContentView()
         } else {
             ZStack {
                 Color("Nouf")
                     .ignoresSafeArea()
                 VStack {
                     Image("Splash")
+                        .resizable()
+                        .frame(width: 200, height: 250)
                 }
                 .scaleEffect(size)
                 .opacity(opacity)
