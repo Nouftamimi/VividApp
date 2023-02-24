@@ -485,6 +485,7 @@
 				DEVELOPMENT_TEAM = XC5CMCPFT9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Vivid/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = vivd;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -512,6 +513,7 @@
 				DEVELOPMENT_TEAM = XC5CMCPFT9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Vivid/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = vivd;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
