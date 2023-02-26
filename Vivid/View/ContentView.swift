@@ -34,39 +34,40 @@ struct ContentView: View {
 //                            })
                             //.navigationBarBackButtonHidden(true)
                             
-//                                Button {
-//                                    ispressed = true
-//                                    //                                mapView().environmentObject(LocalSearchService())
-//
-//                                } label: {
-//                                    Circle()
-//                                        .frame(width: 62, height: 62)
-//                                        .cornerRadius(25)
-//                                        .foregroundColor(Color("Nouf"))
-//                                        .opacity(0.4)
-//
-//
-//                                        .overlay(Image(systemName: "globe.asia.australia")
-//
-//                                            .font(.system(size: 37))
-//                                            .foregroundColor(.white))
-//
-//                            }.padding(.top, -80)
-//                            .fullScreenCover(isPresented: $ispressed, content: MapBoxMapView.init)
+                                Button {
+                                    ispressed = true
+                                    //                                mapView().environmentObject(LocalSearchService())
+
+                                } label: {
+                                    Circle()
+                                        .frame(width: 62, height: 62)
+                                        .cornerRadius(25)
+                                        .foregroundColor(Color("Nouf"))
+                                        .opacity(0.4)
+
+
+                                        .overlay(Image(systemName: "globe.asia.australia")
+
+                                            .font(.system(size: 37))
+                                            .foregroundColor(.white))
+
+                            }.padding(.top, -80)
+                            .fullScreenCover(isPresented: $ispressed, content: MapBoxMapView.init)
                             
-                                                        Circle()
-                                                            .frame(width: 62, height: 62)
-                                                            .cornerRadius(25)
-                                                            .foregroundColor(Color("Nouf"))
-                                                            .opacity(0.4)
-                            
-//                                                            .overlay(NavigationLink(destination: MapBoxMapView(), label: {Image(systemName: "globe.asia.australia")
-                                                            .overlay(Image(systemName: "globe.asia.australia")
-                                                                    .font(.system(size: 37))
-                                                                .foregroundColor(.white)
-                                                            )
-                        }.padding() .frame(width: 90)
-                            .padding(.top, -90)
+//                                                        Circle()
+//                                                            .frame(width: 62, height: 62)
+//                                                            .cornerRadius(25)
+//                                                            .foregroundColor(Color("Nouf"))
+//                                                            .opacity(0.4)
+//
+////                                                            .overlay(NavigationLink(destination: MapBoxMapView(), label: {Image(systemName: "globe.asia.australia")
+//                                                            .overlay(Image(systemName: "globe.asia.australia")
+//                                                                    .font(.system(size: 37))
+//                                                                .foregroundColor(.white)
+//                                                            )
+                        }
+                        //.padding() .frame(width: 90)
+                           // .padding(.top, -90)
                         Spacer()
                         
                         

@@ -6,21 +6,23 @@
 ////  Copyright © 1444 AH Vivid App. All rights reserved.
 ////
 //
-//import SwiftUI
-//
-//struct HeatMapView: View {
-//    
-//   // @State var ispressed : Bool = false
-//    var body: some View {
-//        ZStack{
-//        MapBoxMapView()
-//        }
-//    }
-//}
-//
-//struct HeatMapView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        HeatMapView()
-//            .ignoresSafeArea()
-//    }
-//}
+import SwiftUI
+
+struct HeatMapView: View {
+    
+   // @State var ispressed : Bool = false
+    var body: some View {
+        ZStack{
+        MapBoxMapView()
+            MapIcon()
+        }
+    }
+}
+
+struct HeatMapView_Previews: PreviewProvider {
+    static var previews: some View {
+        HeatMapView()
+            .ignoresSafeArea()
+            //.ignoresSafeArea(.all).preferredColorScheme(.dark).previewInterfaceOrientation(.portrait)
+    }
+}
