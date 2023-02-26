@@ -15,15 +15,17 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MBXAccessToken</key>
+	<string>pk.eyJ1Ijoibm91ZjMyMyIsImEiOiJjbGVnNHd1dGkwMDEwM29xZnI4bmprdzhuIn0.hSSjd1yzOsKrwixUzdJjSQ</string>
 	<key>NSCameraUsageDescription</key>
 	<string>AR needs to use the camera</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Vivid need your location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your presice location is used to show ypur location on the map</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -5,7 +5,6 @@
 //  Created by Jumanah  on 02/08/1444 AH.
 //  Copyright © 1444 AH Vivid App. All rights reserved.
 //
-// test nouf
 
 import SwiftUI
 
@@ -16,12 +15,15 @@ struct SplashScreenView: View {
 
     var body: some View {
         if isActive {
+            ContentView()
         } else {
             ZStack {
                 Color("Nouf")
                     .ignoresSafeArea()
                 VStack {
                     Image("Splash")
+                        .resizable()
+                        .frame(width: 200, height: 250)
                 }
                 .scaleEffect(size)
                 .opacity(opacity)

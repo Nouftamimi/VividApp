@@ -1,11 +1,11 @@
+////
+////  PageModel.swift
+////  Vivid
+////
+////  Created by Jumanah  on 03/08/1444 AH.
+////  Copyright © 1444 AH Vivid App. All rights reserved.
+////
 //
-//  PageModel.swift
-//  Vivid
-//
-//  Created by Jumanah  on 03/08/1444 AH.
-//  Copyright © 1444 AH Vivid App. All rights reserved.
-//
-
 //import Foundation
 //
 //struct Page: Identifiable, Equatable {
