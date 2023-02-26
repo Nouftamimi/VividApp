@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,7 @@
 		AA552D7929A7BDA7007E24DF /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7829A7BDA7007E24DF /* Asset.swift */; };
 		AA552D7B29A7BE2F007E24DF /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7A29A7BE2F007E24DF /* OnboardingItem.swift */; };
 		AA552D7D29A7C00D007E24DF /* OnboardingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7C29A7C00D007E24DF /* OnboardingApp.swift */; };
+		AADD9EB829AB95F200060D2E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = AADD9EB729AB95F200060D2E /* MapboxMaps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADD9EB829AB95F200060D2E /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +208,9 @@
 			dependencies = (
 			);
 			name = Vivid;
+			packageProductDependencies = (
+				AADD9EB729AB95F200060D2E /* MapboxMaps */,
+			);
 			productName = DrawingNet;
 			productReference = 599EF05E2432E7330061D245 /* Vivid.app */;
 			productType = "com.apple.product-type.application";
@@ -234,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 599EF0552432E7330061D245;
+			packageReferences = (
+				AADD9EB629AB95F200060D2E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			productRefGroup = 599EF05F2432E7330061D245 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -490,6 +498,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AADD9EB629AB95F200060D2E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AADD9EB729AB95F200060D2E /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AADD9EB629AB95F200060D2E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 599EF0562432E7330061D245 /* Project object */;
 }
