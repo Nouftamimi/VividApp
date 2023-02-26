@@ -7,122 +7,141 @@ struct ContentView: View {
     @State var hexColor: String = "#FFFFFF"
     @StateObject private var vm = userViewModel()
     @StateObject private var vmPath = DrawingViewModel()
-    @State var ispressed : Bool = false
-//    @ObservableObject var mapV = mapView()
+    @State var ispress : Bool = false
+    //    @ObservableObject var mapV = mapView()
     var body: some View {
-
-            let arView = ARDrawViewContainer(hexColor: $hexColor)
-            
-            func fetchAllDrawing(){
-                vmPath.fetchList { array in
-                    arView.arDrawView.drawFromArray(array)
-                }
+        
+        let arView = ARDrawViewContainer(hexColor: $hexColor)
+        
+        func fetchAllDrawing(){
+            vmPath.fetchList { array in
+                arView.arDrawView.drawFromArray(array)
             }
-            
-            return ZStack {
-                arView
-               // NavigationView {
-                VStack {
-                    HStack {
-                        VStack{
-                            
-                            //   mapView().environmentObject(LocalSearchService())
-                            
-//                            NavigationLink(destination: MapBoxMapView(), label: {Image(systemName: "globe.asia.australia")
-//                                    .font(.system(size: 37))
-//                                    .foregroundColor(.white)
-//                            })
-                            //.navigationBarBackButtonHidden(true)
-                            
-//                                Button {
-//                                    ispressed = true
-//                                    //                                mapView().environmentObject(LocalSearchService())
-//
-//                                } label: {
-//                                    Circle()
-//                                        .frame(width: 62, height: 62)
-//                                        .cornerRadius(25)
-//                                        .foregroundColor(Color("Nouf"))
-//                                        .opacity(0.4)
-//
-//
-//                                        .overlay(Image(systemName: "globe.asia.australia")
-//
-//                                            .font(.system(size: 37))
-//                                            .foregroundColor(.white))
-//
-//                            }.padding(.top, -80)
-//                            .fullScreenCover(isPresented: $ispressed, content: MapBoxMapView.init)
-                            
-                                                        Circle()
-                                                            .frame(width: 62, height: 62)
-                                                            .cornerRadius(25)
-                                                            .foregroundColor(Color("Nouf"))
-                                                            .opacity(0.4)
-                            
-//                                                            .overlay(NavigationLink(destination: MapBoxMapView(), label: {Image(systemName: "globe.asia.australia")
-                                                            .overlay(Image(systemName: "globe.asia.australia")
-                                                                    .font(.system(size: 37))
-                                                                .foregroundColor(.white)
-                                                            )
-                        }.padding() .frame(width: 90)
-                            .padding(.top, -90)
-                        Spacer()
+        }
+        func NavigateToMapView(){
+            if (ispress == false) {
+                ispress = true
+                
+            } else {ispress = false}
+             
+               
+        }
+        
+        return ZStack {
+            arView
+            // NavigationView {
+            VStack {
+                HStack {
+                    VStack{
+                        
+                        //   mapView().environmentObject(LocalSearchService())
+                        
+                        //                            NavigationLink(destination: MapBoxMapView(), label: {Image(systemName: "globe.asia.australia")
+                        //                                    .font(.system(size: 37))
+                        //                                    .foregroundColor(.white)
+                        //                            })
+                        //.navigationBarBackButtonHidden(true)
+                        
+                        //                                Button {
+                        //                                    ispressed = true
+                        //                                    //                                mapView().environmentObject(LocalSearchService())
+                        //
+                        //                                } label: {
+                        //                                    Circle()
+                        //                                        .frame(width: 62, height: 62)
+                        //                                        .cornerRadius(25)
+                        //                                        .foregroundColor(Color("Nouf"))
+                        //                                        .opacity(0.4)
+                        //
+                        //
+                        //                                        .overlay(Image(systemName: "globe.asia.australia")
+                        //
+                        //                                            .font(.system(size: 37))
+                        //                                            .foregroundColor(.white))
+                        //
+                        //                            }.padding(.top, -80)
+                        //                            .fullScreenCover(isPresented: $ispressed, content: MapBoxMapView.init)
+                       
                         
                         
-                        VStack{
-                            
-                            Rectangle()
-                                .frame(width: 50, height: 220)
+                        Button {
+                           NavigateToMapView()
+                        } label: {
+                           
+                            Circle()
+                                .frame(width: 62, height: 62)
                                 .cornerRadius(25)
                                 .foregroundColor(Color("Nouf"))
                                 .opacity(0.4)
-                                .overlay(
-                                    
-                                    VStack {
-                                        
-                                        Button {
-                                            arView.arDrawView.clearAll()
-                                        } label: {
-                                            Image(systemName: "arrow.uturn.backward")
-                                                .font(.system(size: 37))
-                                                .foregroundColor(.white)
-                                            
-                                            
-                                        }
-                                        
-                                        // Spacer()
-                                        ColorSelectView(hexColor: $hexColor)
-                                        
-                                        
-                                        Button {
-                                            vmPath.savePath(arView.arDrawView.drawingArray) {
-                                                //
-                                                arView.arDrawView.clearAll()
-                                            }
-                                        } label: {
-                                            Image(systemName: "paperplane.fill")
-                                                .font(.system(size: 32))
-                                                .foregroundColor(.white)
-                                            
-                                        }
-                                        Button {
-                                            fetchAllDrawing()
-                                        } label: {
-                                            Image(systemName: "eye.fill")
-                                                .font(.system(size: 28))
-                                                .foregroundColor(.white)
-                                                .padding(.top, 10)
-                                        }
-                                    })
-                                .padding()
-                        }.padding(.top,50)
+                            
+                            //                                                            .overlay(NavigationLink(destination: MapBoxMapView(), label: {Image(systemName: "globe.asia.australia")
+                                .overlay(Image(systemName: "globe.asia.australia")
+                                    .font(.system(size: 37))
+                                    .foregroundColor(.white)
+                                )
+                            
+                        } .fullScreenCover(isPresented: $ispress, content: MapBoxMapView.init)
                         
-                    }
+                        
+                           
+                    }.padding() .frame(width: 90)
+                        .padding(.top, -90)
                     Spacer()
                     
+                    
+                    VStack{
+                        
+                        Rectangle()
+                            .frame(width: 50, height: 220)
+                            .cornerRadius(25)
+                            .foregroundColor(Color("Nouf"))
+                            .opacity(0.4)
+                            .overlay(
+                                
+                                VStack {
+                                    
+                                    Button {
+                                        arView.arDrawView.clearAll()
+                                    } label: {
+                                        Image(systemName: "arrow.uturn.backward")
+                                            .font(.system(size: 37))
+                                            .foregroundColor(.white)
+                                        
+                                        
+                                    }
+                                    
+                                    // Spacer()
+                                    ColorSelectView(hexColor: $hexColor)
+                                    
+                                    
+                                    Button {
+                                        vmPath.savePath(arView.arDrawView.drawingArray) {
+                                            //
+                                            arView.arDrawView.clearAll()
+                                        }
+                                    } label: {
+                                        Image(systemName: "paperplane.fill")
+                                            .font(.system(size: 32))
+                                            .foregroundColor(.white)
+                                        
+                                    }
+                                    Button {
+                                        fetchAllDrawing()
+                                    } label: {
+                                        Image(systemName: "eye.fill")
+                                            .font(.system(size: 28))
+                                            .foregroundColor(.white)
+                                            .padding(.top, 10)
+                                    }
+                                })
+                            .padding()
+                    }.padding(.top,50)
+                    
                 }
+                Spacer()
                 
+            }
+            
             //}
             .onAppear{
                 vm.addUser()
@@ -132,12 +151,12 @@ struct ContentView: View {
                     //               fetchAllDrawing()
                 }
             }
-            .ignoresSafeArea()
             
-        }
+            
+        }.ignoresSafeArea()
         
     }
-    }
+}
 
 
 struct ContentView_Previews: PreviewProvider {
