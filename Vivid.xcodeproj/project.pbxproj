@@ -21,17 +21,7 @@
 		AA0E24F429A6096500D5D9C0 /* ARDrawViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E24F329A6096500D5D9C0 /* ARDrawViewContainer.swift */; };
 		AA1AEBDD299D1A45003AF156 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AEBDC299D1A45003AF156 /* UserModel.swift */; };
 		AA1AEBDF299D1A55003AF156 /* DrawingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AEBDE299D1A55003AF156 /* DrawingModel.swift */; };
-		AA1AEBE1299D1A5D003AF156 /* PathModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AEBE0299D1A5D003AF156 /* PathModel.swift */; };
 		AA1AEBE4299D1CED003AF156 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AEBE3299D1CED003AF156 /* UserViewModel.swift */; };
-		AA4488F929A64D3F00793B16 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4488F829A64D3F00793B16 /* SplashScreenView.swift */; };
-		AA552D6F29A7BCF3007E24DF /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D6E29A7BCF3007E24DF /* OnboardingView.swift */; };
-		AA552D7129A7BD22007E24DF /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7029A7BD22007E24DF /* OnboardingScreenView.swift */; };
-		AA552D7329A7BD49007E24DF /* OnboardingContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7229A7BD49007E24DF /* OnboardingContentManager.swift */; };
-		AA552D7529A7BD66007E24DF /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7429A7BD66007E24DF /* MotherView.swift */; };
-		AA552D7729A7BD7E007E24DF /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7629A7BD7E007E24DF /* ViewRouter.swift */; };
-		AA552D7929A7BDA7007E24DF /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7829A7BDA7007E24DF /* Asset.swift */; };
-		AA552D7B29A7BE2F007E24DF /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7A29A7BE2F007E24DF /* OnboardingItem.swift */; };
-		AA552D7D29A7C00D007E24DF /* OnboardingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA552D7C29A7C00D007E24DF /* OnboardingApp.swift */; };
 		AADD9EB829AB95F200060D2E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = AADD9EB729AB95F200060D2E /* MapboxMaps */; };
 /* End PBXBuildFile section */
 
@@ -53,17 +43,7 @@
 		AA1AEBDA299D185A003AF156 /* Vivid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vivid.entitlements; sourceTree = "<group>"; };
 		AA1AEBDC299D1A45003AF156 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		AA1AEBDE299D1A55003AF156 /* DrawingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingModel.swift; sourceTree = "<group>"; };
-		AA1AEBE0299D1A5D003AF156 /* PathModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathModel.swift; sourceTree = "<group>"; };
 		AA1AEBE3299D1CED003AF156 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		AA4488F829A64D3F00793B16 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
-		AA552D6E29A7BCF3007E24DF /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		AA552D7029A7BD22007E24DF /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
-		AA552D7229A7BD49007E24DF /* OnboardingContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentManager.swift; sourceTree = "<group>"; };
-		AA552D7429A7BD66007E24DF /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
-		AA552D7629A7BD7E007E24DF /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
-		AA552D7829A7BDA7007E24DF /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
-		AA552D7A29A7BE2F007E24DF /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
-		AA552D7C29A7C00D007E24DF /* OnboardingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +77,6 @@
 		599EF0602432E7330061D245 /* Vivid */ = {
 			isa = PBXGroup;
 			children = (
-				AA4488EF29A64AE600793B16 /* Onboarding+SplashScreen */,
 				AA0E24F029A6091C00D5D9C0 /* View */,
 				AA1AEBE2299D1CDB003AF156 /* ViewModel */,
 				AA1AEBDB299D1A1F003AF156 /* Model */,
@@ -161,7 +140,6 @@
 			children = (
 				AA1AEBDC299D1A45003AF156 /* UserModel.swift */,
 				AA1AEBDE299D1A55003AF156 /* DrawingModel.swift */,
-				AA1AEBE0299D1A5D003AF156 /* PathModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,22 +152,6 @@
 				AA0E24DD29A6060900D5D9C0 /* DrawingViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		AA4488EF29A64AE600793B16 /* Onboarding+SplashScreen */ = {
-			isa = PBXGroup;
-			children = (
-				AA4488F829A64D3F00793B16 /* SplashScreenView.swift */,
-				AA552D6E29A7BCF3007E24DF /* OnboardingView.swift */,
-				AA552D7029A7BD22007E24DF /* OnboardingScreenView.swift */,
-				AA552D7229A7BD49007E24DF /* OnboardingContentManager.swift */,
-				AA552D7A29A7BE2F007E24DF /* OnboardingItem.swift */,
-				AA552D7429A7BD66007E24DF /* MotherView.swift */,
-				AA552D7629A7BD7E007E24DF /* ViewRouter.swift */,
-				AA552D7829A7BDA7007E24DF /* Asset.swift */,
-				AA552D7C29A7C00D007E24DF /* OnboardingApp.swift */,
-			);
-			path = "Onboarding+SplashScreen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,24 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA552D7D29A7C00D007E24DF /* OnboardingApp.swift in Sources */,
 				599EF0622432E7330061D245 /* AppDelegate.swift in Sources */,
-				AA1AEBE1299D1A5D003AF156 /* PathModel.swift in Sources */,
-				AA552D7929A7BDA7007E24DF /* Asset.swift in Sources */,
 				AA0E24DE29A6060900D5D9C0 /* DrawingViewModel.swift in Sources */,
-				AA552D7129A7BD22007E24DF /* OnboardingScreenView.swift in Sources */,
-				AA552D6F29A7BCF3007E24DF /* OnboardingView.swift in Sources */,
-				AA552D7329A7BD49007E24DF /* OnboardingContentManager.swift in Sources */,
-				AA4488F929A64D3F00793B16 /* SplashScreenView.swift in Sources */,
 				AA0E24F429A6096500D5D9C0 /* ARDrawViewContainer.swift in Sources */,
 				599EF087243314F40061D245 /* Color+Extension.swift in Sources */,
 				AA1AEBDF299D1A55003AF156 /* DrawingModel.swift in Sources */,
-				AA552D7B29A7BE2F007E24DF /* OnboardingItem.swift in Sources */,
 				599EF0642432E7330061D245 /* SceneDelegate.swift in Sources */,
-				AA552D7729A7BD7E007E24DF /* ViewRouter.swift in Sources */,
 				AA0E24ED29A608BC00D5D9C0 /* ColorSelectView.swift in Sources */,
 				AA0E24EB29A608A500D5D9C0 /* ContentView.swift in Sources */,
-				AA552D7529A7BD66007E24DF /* MotherView.swift in Sources */,
 				AA0E24DC29A605BD00D5D9C0 /* PathViewModel.swift in Sources */,
 				AA1AEBE4299D1CED003AF156 /* UserViewModel.swift in Sources */,
 				AA1AEBDD299D1A45003AF156 /* UserModel.swift in Sources */,
