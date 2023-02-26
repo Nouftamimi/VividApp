@@ -481,7 +481,6 @@
 				CODE_SIGN_ENTITLEMENTS = Vivid/Vivid.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Vivid/Preview Content\"";
-				DEVELOPMENT_TEAM = XC5CMCPFT9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Vivid/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -506,7 +505,6 @@
 				CODE_SIGN_ENTITLEMENTS = Vivid/Vivid.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Vivid/Preview Content\"";
-				DEVELOPMENT_TEAM = XC5CMCPFT9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Vivid/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

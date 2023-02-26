@@ -4,6 +4,7 @@
 //
 //  Created by Jumanah  on 03/08/1444 AH.
 //  Copyright © 1444 AH Vivid App. All rights reserved.
+//            dotAppearance.currentPageIndicatorTintColor = .blue
 //
 
 import SwiftUI
@@ -12,7 +13,6 @@ struct OnboardingView: View {
     
     @State private var isPresented = false
     @State private var pageIndex = 0
-    private let pages: [Page] = Page.samplePages
     private let dotAppearance = UIPageControl.appearance()
     
    

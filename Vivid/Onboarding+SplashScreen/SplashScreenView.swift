@@ -15,7 +15,6 @@ struct SplashScreenView: View {
 
     var body: some View {
         if isActive {
-            OnboardingView()
         } else {
             ZStack {
                 Color("Nouf")
