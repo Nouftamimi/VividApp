@@ -13,6 +13,7 @@ Vivid App is to reverse the negative effects of technology on isolation, that en
 - CloudKit
 
 ### Demo 
+https://user-images.githubusercontent.com/48413596/222176347-12232c77-b4a9-4435-87ce-e34d2388024e.mp4
 
 
 ### Now the app is free to download in app store
