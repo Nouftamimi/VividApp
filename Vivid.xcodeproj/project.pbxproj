@@ -21,13 +21,8 @@
 		AA0E24F429A6096500D5D9C0 /* ARDrawViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E24F329A6096500D5D9C0 /* ARDrawViewContainer.swift */; };
 		AA1AEBDD299D1A45003AF156 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AEBDC299D1A45003AF156 /* UserModel.swift */; };
 		AA1AEBDF299D1A55003AF156 /* DrawingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AEBDE299D1A55003AF156 /* DrawingModel.swift */; };
-		AA1AEBE1299D1A5D003AF156 /* PathModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AEBE0299D1A5D003AF156 /* PathModel.swift */; };
 		AA1AEBE4299D1CED003AF156 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1AEBE3299D1CED003AF156 /* UserViewModel.swift */; };
-		AA293EAF29AA9050000CDFC0 /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA293EAE29AA9050000CDFC0 /* MapIcon.swift */; };
-		AA4488F929A64D3F00793B16 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4488F829A64D3F00793B16 /* SplashScreenView.swift */; };
-		AA80361729AA6DD200D8597F /* MapBoxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA80361629AA6DD200D8597F /* MapBoxMapView.swift */; };
-		AA80361A29AA6FAA00D8597F /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = AA80361929AA6FAA00D8597F /* MapboxMaps */; };
-		AA80361C29AA706A00D8597F /* HeatMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA80361B29AA706A00D8597F /* HeatMapView.swift */; };
+		AADD9EB829AB95F200060D2E /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = AADD9EB729AB95F200060D2E /* MapboxMaps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +43,7 @@
 		AA1AEBDA299D185A003AF156 /* Vivid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vivid.entitlements; sourceTree = "<group>"; };
 		AA1AEBDC299D1A45003AF156 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		AA1AEBDE299D1A55003AF156 /* DrawingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingModel.swift; sourceTree = "<group>"; };
-		AA1AEBE0299D1A5D003AF156 /* PathModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathModel.swift; sourceTree = "<group>"; };
 		AA1AEBE3299D1CED003AF156 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		AA293EAE29AA9050000CDFC0 /* MapIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIcon.swift; sourceTree = "<group>"; };
-		AA4488F829A64D3F00793B16 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
-		AA80361629AA6DD200D8597F /* MapBoxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxMapView.swift; sourceTree = "<group>"; };
-		AA80361B29AA706A00D8597F /* HeatMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA80361A29AA6FAA00D8597F /* MapboxMaps in Frameworks */,
+				AADD9EB829AB95F200060D2E /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +61,6 @@
 		599EF0552432E7330061D245 = {
 			isa = PBXGroup;
 			children = (
-				AA80361529AA6DAC00D8597F /* Map */,
 				599EF0602432E7330061D245 /* Vivid */,
 				599EF05F2432E7330061D245 /* Products */,
 			);
@@ -88,7 +77,6 @@
 		599EF0602432E7330061D245 /* Vivid */ = {
 			isa = PBXGroup;
 			children = (
-				AA4488F829A64D3F00793B16 /* SplashScreenView.swift */,
 				AA0E24F029A6091C00D5D9C0 /* View */,
 				AA1AEBE2299D1CDB003AF156 /* ViewModel */,
 				AA1AEBDB299D1A1F003AF156 /* Model */,
@@ -152,7 +140,6 @@
 			children = (
 				AA1AEBDC299D1A45003AF156 /* UserModel.swift */,
 				AA1AEBDE299D1A55003AF156 /* DrawingModel.swift */,
-				AA1AEBE0299D1A5D003AF156 /* PathModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,16 +152,6 @@
 				AA0E24DD29A6060900D5D9C0 /* DrawingViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		AA80361529AA6DAC00D8597F /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				AA80361629AA6DD200D8597F /* MapBoxMapView.swift */,
-				AA80361B29AA706A00D8597F /* HeatMapView.swift */,
-				AA293EAE29AA9050000CDFC0 /* MapIcon.swift */,
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +171,7 @@
 			);
 			name = Vivid;
 			packageProductDependencies = (
-				AA80361929AA6FAA00D8597F /* MapboxMaps */,
+				AADD9EB729AB95F200060D2E /* MapboxMaps */,
 			);
 			productName = DrawingNet;
 			productReference = 599EF05E2432E7330061D245 /* Vivid.app */;
@@ -225,7 +202,7 @@
 			);
 			mainGroup = 599EF0552432E7330061D245;
 			packageReferences = (
-				AA80361829AA6FAA00D8597F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				AADD9EB629AB95F200060D2E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
 			);
 			productRefGroup = 599EF05F2432E7330061D245 /* Products */;
 			projectDirPath = "";
@@ -255,14 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				599EF0622432E7330061D245 /* AppDelegate.swift in Sources */,
-				AA1AEBE1299D1A5D003AF156 /* PathModel.swift in Sources */,
-				AA293EAF29AA9050000CDFC0 /* MapIcon.swift in Sources */,
 				AA0E24DE29A6060900D5D9C0 /* DrawingViewModel.swift in Sources */,
-				AA4488F929A64D3F00793B16 /* SplashScreenView.swift in Sources */,
 				AA0E24F429A6096500D5D9C0 /* ARDrawViewContainer.swift in Sources */,
 				599EF087243314F40061D245 /* Color+Extension.swift in Sources */,
-				AA80361729AA6DD200D8597F /* MapBoxMapView.swift in Sources */,
-				AA80361C29AA706A00D8597F /* HeatMapView.swift in Sources */,
 				AA1AEBDF299D1A55003AF156 /* DrawingModel.swift in Sources */,
 				599EF0642432E7330061D245 /* SceneDelegate.swift in Sources */,
 				AA0E24ED29A608BC00D5D9C0 /* ColorSelectView.swift in Sources */,
@@ -338,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -392,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -412,14 +384,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Vivid/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Vivid/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = vivd;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Vividteam.na;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -440,14 +410,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Vivid/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Vivid/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = vivd;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = Vividteam.na;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -482,7 +450,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AA80361829AA6FAA00D8597F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+		AADD9EB629AB95F200060D2E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
 			requirement = {
@@ -493,9 +461,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA80361929AA6FAA00D8597F /* MapboxMaps */ = {
+		AADD9EB729AB95F200060D2E /* MapboxMaps */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AA80361829AA6FAA00D8597F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			package = AADD9EB629AB95F200060D2E /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
 			productName = MapboxMaps;
 		};
 /* End XCSwiftPackageProductDependency section */

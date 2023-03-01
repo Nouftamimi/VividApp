@@ -10,10 +10,6 @@ import Foundation
 import CloudKit
 
 struct drawingModel{
-   
-    
-   
-    
     
     
     let id: CKRecord.ID
@@ -22,19 +18,14 @@ struct drawingModel{
     let location : CLLocation
     let compressedDrawingBytes = [Date]()
     
-   
+    
     init (record:  CKRecord){
         self.id = record.recordID
         self.userId = record[" userId"] as? String ?? ""
-       
-       
+        
+        
         self.dateCreated = record["dateCreated"] as! Date
         self.location = record["location"] as! CLLocation
-       
-        
         
     }
-    
-    
 }
-
